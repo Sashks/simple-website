@@ -225,6 +225,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
   padding: 8px 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
