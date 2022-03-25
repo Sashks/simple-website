@@ -11,8 +11,9 @@ https://templatemo.com/tm-566-medic-care
 :root {
   --white-color: #FFFFFF;
   --primary-color: #40997a;
+  --secondary-color: #79b7a1;
   --section-bg-color: #F9F9F9;
-  --dark-color: #0f0f0f;
+  --dark-color: #2a2a2a;
   --title-color: #565758;
   --p-color: #717275;
   --border-color: #eaeaea;
@@ -102,7 +103,7 @@ button {
 }
 
 a {
-  color: var(--p-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -113,18 +114,33 @@ a:hover {
 .section-about {
   margin-top: -190px;
   padding-top: 3rem;
+  margin-bottom: 120px;
+}
+
+.about-photo {
+}
+
+.about-outro {
+  padding: 200px;
+  margin-top: -160px;
+  background-image: url(../images/dental-4-1.jpg);
+}
+
+.about-outro-space {
+  height: 137px;
 }
 
 .section-padding {
   padding-top: 7rem;
   padding-bottom: 7rem;
-
 }
 
 .padding-info {
+  position: ;
   border-radius: 20px;
   background-color: var(--section-bg-color);
   padding-left: 35px;
+  padding-right: 35px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -317,9 +333,8 @@ strong {
 /*---------------------------------------
   NAVIGATION T2
 -----------------------------------------*/
-
 .main-navigation {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100%;
   padding: 0px;
@@ -456,7 +471,6 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
   background-color: #fff;
 }
 
-
 button:focus:not(:focus-visible) {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -474,7 +488,7 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 576px) {
   .main-banner {
-    padding: 220px 0px 400px 0px;
+    padding: 200px 0px 400px 0px;
   }
 }
 
@@ -510,7 +524,7 @@ button:focus:not(:focus-visible) {
   margin-top: -150px;
 }
 
-.white-button a {
+.white-button p {
   font-size: 14px;
   text-transform: capitalize;
   font-weight: 400;
@@ -529,9 +543,6 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------2nd template ^  --------*/
-
-
-
 /*---------------------------------------
   NAVIGATION T1
 -----------------------------------------
@@ -578,73 +589,58 @@ button:focus:not(:focus-visible) {
 .nav-link:focus {
   color: var(--p-color);
 }
-
-.navbar-toggler {
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  margin: 0;
-  width: 30px;
-  height: 35px;
-  outline: none;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  background: transparent;
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
-  top: 0;
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-  transform: rotate(45deg);
-}
-
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transform: rotate(-45deg);
-}
-
-.navbar-toggler .navbar-toggler-icon {
-  background: var(--dark-color);
-  transition: background 10ms 300ms ease;
-  display: block;
-  width: 30px;
-  height: 2px;
-  position: relative;
-}
-
-.navbar-toggler .navbar-toggler-icon:before,
-.navbar-toggler .navbar-toggler-icon:after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background: var(--dark-color);
-  width: 30px;
-  height: 2px;
-  content: '';
-}
-
-.navbar-toggler .navbar-toggler-icon:before {
-  top: -8px;
-}
-
-.navbar-toggler .navbar-toggler-icon:after {
-  top: 8px;
-}
 */
+/*---------------------------------------
+  SERVICE
+-----------------------------------------*/
+
+.section-services {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  margin-bottom: 100px;
+  height: 700px;
+  background-image: url(../images/dental-4-2.jpg);
+}
+
+.services-title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.services {
+  list-style-type: none;
+  border-radius: 7.5px;
+  padding: 0px 20px;
+  margin-top: 10px;
+}
+
+.service-info {
+  display: none;
+  transition: all .5s;
+}
+
+.service-name {
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+  margin: 15px;
+  padding: 10px 10px 10px 15px;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all .5s;
+  -webkit-transition: all .4s ease;
+}
+
+.service-name:hover {
+  
+  color: var(--primary-color);
+}
+
+.service-name:hover .service-info {
+  display: block;
+  color: var(--white-color);
+  transition: all .5s;
+}
 
 /*---------------------------------------
   TIMELINE
@@ -742,9 +738,9 @@ button:focus:not(:focus-visible) {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   z-index: 1;
 }
 
@@ -759,6 +755,7 @@ button:focus:not(:focus-visible) {
 }
 
 @media (max-width: 767px) {
+
   .timeline-nodes:nth-child(odd) h3,
   .timeline-nodes:nth-child(odd) p {
     text-align: left;
@@ -840,7 +837,6 @@ button:focus:not(:focus-visible) {
     line-height: 70px;
   }
 }
-
 
 /*---------------------------------------
   REVIEWS
@@ -1011,8 +1007,7 @@ button:focus:not(:focus-visible) {
 }
 
 @media screen and (max-width: 991px) {
-  body {
-  }
+  body {}
 
   h1 {
     font-size: 38px;
