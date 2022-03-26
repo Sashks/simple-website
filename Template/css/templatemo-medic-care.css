@@ -117,7 +117,17 @@ a:hover {
   margin-bottom: 120px;
 }
 
-.about-photo {}
+.about-photo img {
+  display: none;
+  margin-top: -176px;
+  margin-left: -49px;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  border: 5px solid;
+  border-color: var(--primary-color);
+  border-radius: 200px;
+}
 
 .about-outro {
   padding: 200px;
@@ -135,13 +145,73 @@ a:hover {
 }
 
 .padding-info {
-  position: ;
   border-radius: 20px;
   background-color: var(--section-bg-color);
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+/*---------------------------------------
+  PAGE FLIP PHOTO
+-----------------------------------------*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--white-color);
+  width: 350px;
+  height: 350px;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+.flip-card-back p {
+  margin-top: 120px;
 }
 
 /*---------------------------------------
@@ -315,6 +385,10 @@ strong {
   padding: 0 20px;
 }
 
+.featured-circle:hover .about-photo img {
+  display: block;
+}
+
 .featured-text {
   font-size: var(--h6-font-size);
   line-height: 2rem;
@@ -337,6 +411,7 @@ strong {
   position: fixed;
   width: 100%;
   padding: 0px;
+  z-index: 222;
   transition: all .3s;
   animation: addressAppear 3s;
 }
@@ -511,6 +586,7 @@ button:focus:not(:focus-visible) {
     opacity: 0;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -550,15 +626,19 @@ button:focus:not(:focus-visible) {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -655,11 +735,10 @@ button:focus:not(:focus-visible) {
   list-style-type: none;
   border-radius: 7.5px;
   padding: 0px 20px;
-  margin-top: 10px;
 }
 
 .service-info {
-  display: none;
+  color: transparent;
   transition: all .5s;
 }
 
@@ -667,7 +746,8 @@ button:focus:not(:focus-visible) {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
   margin: 15px;
-  padding: 10px 10px 10px 15px;
+  height: 60px;
+  padding: -10px 10px 10px 15px;
   color: var(--white-color);
   cursor: pointer;
   transition: all .5s;
@@ -679,9 +759,19 @@ button:focus:not(:focus-visible) {
 }
 
 .service-name:hover .service-info {
-  display: block;
   color: var(--white-color);
   transition: all .5s;
+  animation: serviceInfo 2s;
+}
+
+@keyframes serviceInfo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /*---------------------------------------
@@ -883,6 +973,18 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   REVIEWS
 -----------------------------------------*/
+.section-reviews {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  margin-bottom: 100px;
+}
+
+.reviews-title {
+  color: var(--dark-color);
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
 .reviews-thumb {
   margin-bottom: 0;
   padding: 32px;
@@ -891,6 +993,10 @@ button:focus:not(:focus-visible) {
 .reviews-text {
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.reviews-head {
+  color: var(--primary-color);
 }
 
 .reviews-image {
