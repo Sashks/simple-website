@@ -117,8 +117,7 @@ a:hover {
   margin-bottom: 120px;
 }
 
-.about-photo {
-}
+.about-photo {}
 
 .about-outro {
   padding: 200px;
@@ -334,11 +333,17 @@ strong {
   NAVIGATION T2
 -----------------------------------------*/
 .main-navigation {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
   position: fixed;
   width: 100%;
   padding: 0px;
   transition: all .3s;
+  animation: addressAppear 3s;
+}
+
+.main-navigation-active {
+  transition: 1s ease;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-nav {
@@ -498,6 +503,18 @@ button:focus:not(:focus-visible) {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2.5px;
+  animation: nameAppear 2.3s;
+}
+
+@keyframes nameAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .main-banner h2 {
@@ -507,6 +524,7 @@ button:focus:not(:focus-visible) {
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 25px;
+  animation: nameAppear 2.3s;
 }
 
 .main-banner h2 em {
@@ -518,6 +536,32 @@ button:focus:not(:focus-visible) {
   font-size: 15px;
   color: #ffffff;
   letter-spacing: 2.5px;
+}
+
+.main-address {
+  animation: addressAppear 3s;
+}
+
+.main-contacts {
+  animation: addressAppear 3s;
+}
+
+@keyframes addressAppear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .search-form {
@@ -593,7 +637,6 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   SERVICE
 -----------------------------------------*/
-
 .section-services {
   padding-top: 3rem;
   padding-bottom: 7rem;
@@ -632,7 +675,6 @@ button:focus:not(:focus-visible) {
 }
 
 .service-name:hover {
-  
   color: var(--primary-color);
 }
 
