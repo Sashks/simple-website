@@ -982,12 +982,12 @@ button:focus:not(:focus-visible) {
 .reviews-title {
   color: var(--dark-color);
   text-transform: uppercase;
-  margin-top: 0px;
 }
 
 .reviews-thumb {
   margin-bottom: 0;
   padding: 32px;
+  border-radius: 20px;
 }
 
 .reviews-text {
@@ -1000,13 +1000,13 @@ button:focus:not(:focus-visible) {
 }
 
 .reviews-image {
-  border-radius: 100px;
+  border-radius: 50%;
   width: 70px !important;
   height: 70px !important;
 }
 
 .reviews-carousel .owl-item {
-  opacity: 0.45;
+  opacity: 0.65;
 }
 
 .reviews-carousel .owl-item.active.center {
