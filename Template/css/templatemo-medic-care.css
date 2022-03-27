@@ -413,7 +413,7 @@ strong {
   padding: 0px;
   z-index: 222;
   transition: all .3s;
-  animation: addressAppear 3s;
+  animation: addressAppear 2.5s;
 }
 
 .main-navigation-active {
@@ -615,11 +615,11 @@ button:focus:not(:focus-visible) {
 }
 
 .main-address {
-  animation: addressAppear 3s;
+  animation: addressAppear 2.5s;
 }
 
 .main-contacts {
-  animation: addressAppear 3s;
+  animation: addressAppear 2.5s;
 }
 
 @keyframes addressAppear {
@@ -627,17 +627,10 @@ button:focus:not(:focus-visible) {
     opacity: 0;
   }
 
-  25% {
-    opacity: 0;
-  }
-
   50% {
     opacity: 0;
   }
 
-  75% {
-    opacity: 0;
-  }
 
   100% {
     opacity: 1;
@@ -728,7 +721,6 @@ button:focus:not(:focus-visible) {
 .services-title {
   color: var(--white-color);
   text-transform: uppercase;
-  margin-top: 0px;
 }
 
 .services {
@@ -1006,7 +998,7 @@ button:focus:not(:focus-visible) {
 }
 
 .reviews-carousel .owl-item {
-  opacity: 0.65;
+  opacity: 0.55;
 }
 
 .reviews-carousel .owl-item.active.center {
@@ -1103,6 +1095,120 @@ button:focus:not(:focus-visible) {
 }
 
 /*---------------------------------------
+  CONTACTS
+-----------------------------------------*/
+.section-contacts {
+  height: 1200px;
+}
+
+.contacts-title {
+  padding-top: 50px;
+  color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+.right-map-text {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 555px;
+  height: 430px;
+  padding: 30px 30px;
+}
+
+.right-map {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.contacts-office-name {
+  text-align: center;
+  color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+.contacts-schedule {
+  background-color: var(--section-bg-color);
+  border-radius: 20px;
+  float: left;
+  width: 55%;
+  height: 55%;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+}
+
+.contacts-schedule ul {
+  font-size: 17px;
+}
+
+.contacts-week {
+  float: left;
+  width: 50%;
+  list-style-type: none;
+  margin-left: -32px;
+}
+
+.contacts-hours {
+  float: left;
+  width: 10%;
+  list-style-type: none;
+  margin-left: -200px;
+  text-align: center;
+}
+
+.contacts-week-item {
+  padding-bottom: 3px;
+  width: 500px;
+}
+
+.contacts-address {
+  background-color: var(--section-bg-color);
+  border-radius: 20px;
+  float: right;
+  width: 42.5%;
+  height: 55%;
+  padding: 12px 15px;
+}
+
+.address {
+  font-size: 18px;
+}
+
+.contacts-contacts {
+  background-color: var(--section-bg-color);
+  border-radius: 20px;
+  float: left;
+  width: 55%;
+  height: 35%;
+  padding: 12px 15px;
+}
+
+.contacts-social {
+  background-color: var(--section-bg-color);
+  border-radius: 20px;
+  float: right;
+  width: 42.5%;
+  height: 35%;
+  padding: 12px 15px;
+}
+
+.contacts-mail-tel a {
+  color: var(--primary-color);
+}
+
+.contacts-mail-tel:hover a {
+  color: var(--dark-color);
+}
+
+.contacts-icon {
+  font-size: 18px;
+  color: var(--dark-color);
+}
+
+#address-2 {
+  margin-top: 100px;
+}
+
+/*---------------------------------------
   FOOTER
 -----------------------------------------*/
 .site-footer {
@@ -1122,17 +1228,15 @@ button:focus:not(:focus-visible) {
 }
 
 .social-icon li {
+  margin-top: -7px;
   list-style: none;
   display: inline-block;
   vertical-align: top;
   transition: all 0.3s;
 }
 
-.social-icon:hover li:not(:hover) {
-  opacity: 0.65;
-}
-
 .social-icon-link {
+  color: var(--title-color);
   font-size: var(--p-font-size);
   display: inline-block;
   vertical-align: top;
