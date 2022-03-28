@@ -7,15 +7,6 @@
     $(".navbar-collapse").collapse('hide');
   });
 
-  const navbar = document.querySelector('.main-navigation');
-  window.onscroll = () => {
-    if (window.scrollY > 170) {
-      navbar.classList.add('main-navigation-active');
-    } else {
-      navbar.classList.remove('main-navigation-active');
-    }
-  };
-
   // REVIEWS CAROUSEL
   $('.reviews-carousel').owlCarousel({
     center: true,
