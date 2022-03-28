@@ -1134,6 +1134,7 @@ button:focus:not(:focus-visible) {
   height: 55%;
   padding: 12px 15px;
   margin-bottom: 10px;
+  font-weight: 200;
 }
 
 .contacts-schedule ul {
@@ -1167,6 +1168,7 @@ button:focus:not(:focus-visible) {
   width: 42.5%;
   height: 55%;
   padding: 12px 15px;
+  font-weight: 200;
 }
 
 .address {
@@ -1212,11 +1214,19 @@ button:focus:not(:focus-visible) {
   FOOTER
 -----------------------------------------*/
 .site-footer {
-  background: var(--section-bg-color);
+  background-image: url(../images/dental-1-f.jpg);
+  height: 100px;
 }
 
 .copyright-text {
+  width: 500px;
+  margin-left: 20px;
   font-size: var(--menu-font-size);
+}
+
+.logo {
+  margin: 15px -20px;
+  height: 55%;
 }
 
 /*---------------------------------------
