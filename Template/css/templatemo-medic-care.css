@@ -715,7 +715,7 @@ button:focus:not(:focus-visible) {
   padding-top: 3rem;
   padding-bottom: 7rem;
   margin-bottom: 100px;
-  height: 700px;
+  height: 920px;
   background-image: url(../images/dental-4-2.jpg);
 }
 
@@ -1100,6 +1100,7 @@ button:focus:not(:focus-visible) {
 -----------------------------------------*/
 .section-contacts {
   height: 1400px;
+
 }
 
 .contacts-title {
@@ -1108,16 +1109,30 @@ button:focus:not(:focus-visible) {
   text-transform: uppercase;
 }
 
-.right-map-text {
+.map-text {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 20px 20px;
-  width: 500px;
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.right-map {
-  width: 500px;
+.left-map-text {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px 20px;
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.map {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .map-frame {
   width: 100%;
