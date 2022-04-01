@@ -245,6 +245,7 @@ a:hover {
 }
 
 .main-navigation-active {
+  height: 50px;
   transition: 1s ease;
   background: rgba(0, 0, 0, 0.6);
 }
@@ -677,6 +678,10 @@ a:hover {
   color: var(--dark-color);
 }
 
+.social-icon a {
+  color: var(--p-color);
+}
+
 .social-icon:hover i {
   color: var(--primary-color);
 }
@@ -773,7 +778,7 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
   .section-contacts {
-    height: 1500px;
+    height: 1450px;
   }
 }
 
