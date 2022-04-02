@@ -135,7 +135,6 @@ a:hover {
 }
 
 .about-outro {
-  padding: 200px;
   margin-top: -160px;
   background-image: url(../images/main/dental-4-1.jpg);
 }
@@ -245,7 +244,6 @@ a:hover {
 }
 
 .main-navigation-active {
-  height: 50px;
   transition: 1s ease;
   background: rgba(0, 0, 0, 0.6);
 }
@@ -726,9 +724,6 @@ a:hover {
   font-size: var(--menu-font-size);
 }
 
-/*---------------------------------------
-  SOCIAL ICON
------------------------------------------*/
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
