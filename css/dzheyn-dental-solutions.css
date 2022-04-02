@@ -137,6 +137,9 @@ a:hover {
 .about-outro {
   margin-top: -160px;
   background-image: url(../images/main/dental-4-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .about-outro-space {
@@ -409,6 +412,9 @@ a:hover {
   margin-bottom: 100px;
   height: 920px;
   background-image: url(../images/main/dental-4-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .services-title {
@@ -727,11 +733,6 @@ a:hover {
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
-@media screen and (min-width: 1600px) {
-  .container {
-    height: 740px;
-  }
-}
 
 @media screen and (max-width: 991px) {
   body {}
