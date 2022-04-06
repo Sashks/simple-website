@@ -575,6 +575,10 @@ a:hover {
   height: 1200px;
 }
 
+.spacing {
+  width: 5%;
+}
+
 .contacts-title {
   padding-top: 50px;
   color: var(--dark-color);
@@ -586,8 +590,6 @@ a:hover {
   border-bottom-left-radius: 20px;
   padding: 20px 20px;
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .left-map-text {
@@ -595,19 +597,24 @@ a:hover {
   border-bottom-right-radius: 20px;
   padding: 20px 20px;
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .map {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 630px;
 }
 
 .map-frame {
   width: 100%;
   height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.map-frame-left {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .contacts-office-name {
@@ -733,7 +740,6 @@ a:hover {
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
-
 @media screen and (max-width: 991px) {
   body {}
 
@@ -770,12 +776,49 @@ a:hover {
     padding-top: 5px;
     padding-bottom: 10px;
   }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+  .spacing {
+    width: 12%;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+  .spacing {
+    width: 5%;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
   .section-contacts {
     height: 1450px;
   }
+
+  .map {
+    width: 400px;
+  }
+
+  .spacing {
+    width: 10%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .section-contacts {
+    height: 1450px;
+  }
+
+  .map {
+    width: 200px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -789,6 +832,14 @@ a:hover {
     max-width: 100px;
     margin: 20px auto;
   }
+
+    .map {
+      width: 450px;
+    }
+
+    .spacing {
+      width: 13%;
+    }
 
   .reviews-carousel .owl-nav .owl-prev,
   .reviews-carousel .owl-nav .owl-next {
