@@ -160,6 +160,11 @@ a:hover {
   padding-bottom: 15px;
 }
 
+.padding-info strong {
+  color: var(--dark-color);
+  font-weight: var(--font-weight-semibold);
+}
+
 /*---------------------------------------
   PAGE FLIP PHOTO
 -----------------------------------------*/
@@ -641,6 +646,10 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.d-adr1 {
+  width:40%;
+}
+
 .hours {
   background-color: var(--section-bg-color);
   border-top-right-radius: 20px;
@@ -649,6 +658,10 @@ a:hover {
   padding: 10px;
   float: left;
   width: 50%;
+}
+
+.h-adr1 {
+  width: 60%;
 }
 
 .contacts-address {
