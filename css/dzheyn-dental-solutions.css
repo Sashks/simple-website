@@ -644,10 +644,12 @@ a:hover {
   float: left;
   width: 50%;
   margin-bottom: 10px;
+
+  font-size: 15px;
 }
 
 .d-adr1 {
-  width:40%;
+  width:34%;
 }
 
 .hours {
@@ -658,10 +660,11 @@ a:hover {
   padding: 10px;
   float: left;
   width: 50%;
+  font-size: 15px;
 }
 
 .h-adr1 {
-  width: 60%;
+  width: 66%;
 }
 
 .contacts-address {
