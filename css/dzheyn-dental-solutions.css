@@ -415,14 +415,17 @@ a:hover {
   padding-top: 3rem;
   padding-bottom: 7rem;
   margin-bottom: 100px;
-  height: 920px;
-  background-image: url(../images/main/dental-4-2.jpg);
+  height: 720px;
+  background-image: url(../images/main/dental-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-top: -160px;
 }
 
 .services-title {
+  padding-top: 80px;
+  margin-top: 120px;
   color: var(--white-color);
   text-transform: uppercase;
 }
@@ -644,12 +647,11 @@ a:hover {
   float: left;
   width: 50%;
   margin-bottom: 10px;
-
   font-size: 15px;
 }
 
 .d-adr1 {
-  width:34%;
+  width: 34%;
 }
 
 .hours {
@@ -792,23 +794,18 @@ a:hover {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-
 }
 
 @media screen and (max-width: 1600px) {
-
   .spacing {
     width: 12%;
   }
-
 }
 
 @media screen and (max-width: 1400px) {
-
   .spacing {
     width: 5%;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -823,7 +820,6 @@ a:hover {
   .spacing {
     width: 10%;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -834,7 +830,6 @@ a:hover {
   .map {
     width: 200px;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -849,13 +844,17 @@ a:hover {
     margin: 20px auto;
   }
 
-    .map {
-      width: 450px;
-    }
+  .map {
+    width: 450px;
+  }
 
-    .spacing {
-      width: 13%;
-    }
+  .spacing {
+    width: 13%;
+  }
+
+  .section-services {
+    height: 920px;
+  }
 
   .reviews-carousel .owl-nav .owl-prev,
   .reviews-carousel .owl-nav .owl-next {
