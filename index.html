@@ -1,14 +1,95 @@
 <!doctype html>
-<html lang="en">
+<html lang="bg">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="Dzheyn Dental Solutions" content="">
-  <meta name="Aleksandar Bachvarov" content="">
+  <meta name="description" content="Качествени зъболекарски услуги в гр. Варна. Прегледи, протези, пломби, почистване на зъби от Д-р Светлана Джейн. Вашето здраве е приоритет!">
 
-  <title>Зъболекар Варна - Светлана Джейн - Svetlana Dzheyn - Dentist Varna</title>
+  <title>Зъболекар Варна | Д-р Светлана Джейн - Стоматологични услуги в гр.Варна</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Д-р Светлана Джейн",
+      "description": "Качествени зъболекарски услуги в гр. Варна. Прегледи, протези, пломби, почистване на зъби от Д-р Светлана Джейн. Вашето здраве е приоритет!",
+      "url": "http://dzheyn.eu",
+      "telephone": "+359888985446",
+      "email": "dr.dzheyn@gmail.com",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "бул. Съборни 11",
+          "addressLocality": "Варна",
+          "postalCode": "9000",
+          "addressCountry": "България"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Дядо Димитър-Македонеца 3",
+          "addressLocality": "Варна",
+          "postalCode": "9021",
+          "addressCountry": "България"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Thursday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Wednesday", "Friday"],
+          "opens": "09:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.facebook.com/svetlana.dzheyn",
+        "https://m.me/svetlana.dzheyn",
+        "viber://chat?number=359888985446",
+        "http://wa.me/359888985446"
+      ],
+      "areaServed": "Варна, България",
+      "service": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Преглед",
+          "description": "Диагностика и експертиза"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Почистване на зъбен камък",
+          "description": "Почистване и полиране"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Неподвижно протезиране",
+          "description": "Коронки и мостове (керамични, метални, пластмасови)"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Екстракция",
+          "description": "Зъби, пулпит, периодонтит"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Фотополимерни обтурации",
+          "description": "Пломби"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Подвижно протезиране",
+          "description": "Протези (моделно ляти, еластични, пластмасови)"
+        }
+      ]
+    }
+  </script>
 
   <!-- CSS FILES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +99,10 @@
   <link href="css/bootstrap-icons.css" rel="stylesheet">
   <link href="css/owl.carousel.min.css" rel="stylesheet">
   <link href="css/dzheyn-dental-solutions.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/">
 </head>
 
 <body id="top">
@@ -41,8 +126,17 @@
               <a class="nav-link" href="#about">Инфо</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" style="color: #3e91c5; font-size: 18px;" href="/blog/index.html">/dʒeɪn/</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#services">Услуги</a>
             </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" style="color: #40997a;" href="#services">Блог</a>
+            </li>
+            -->
+            
             <!-- ADD WHEN GOOGLE REVIEWS COME IN
             <li class="nav-item">
               <a class="nav-link" href="#reviews">Отзиви</a>
@@ -51,6 +145,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Контакти</a>
             </li>
+          </ul>
+        </div>
+
+        <div class="dropdown language-dropdown ms-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi-globe"></i> BG
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" style="color: #40997a" href="/" hreflang="bg">(BG) Български</a></li>
+            <li><a class="dropdown-item" href="/en/" hreflang="en">(EN) English</a></li>
+            <li><a class="dropdown-item" href="/ru/" hreflang="ru">(RU) Русский</a></li>
           </ul>
         </div>
 
@@ -64,25 +169,26 @@
       <div class="row">
         <div class="col-lg-12">
 
-          <h5>Зъболекар</h5>
-          <h2><em>Д-р</em> Светлана Джейн</h2>
+          <h2>Зъболекар </h2>
+          <h1><em>Д-р</em> Светлана Джейн</h1>
 
           <!-- ADDRESSES -->
           <p class="main-address">
-            <a href="#address-1">бул. „Съборни“ №11, гр. Варна</a>
+            <i class="bi-geo-alt"></i><a href="#address-1"> бул. „Съборни“ №11, гр. Варна</a>
           </p>
           <p class="main-address">
-            <a href="#address-2">ул. „Дядо Димитър-Македонеца“ №3, кв. Галата, гр. Варна</a>
+            <i class="bi-geo-alt"></i><a href="#address-2"> ул. „Дядо Димитър-Македонеца“ №3, кв. Галата, гр. Варна</a>
           </p>
           <br />
 
           <!-- CONTACTS -->
           <div class="main-contacts">
             <p>
-              <a href="tel:+359888985446"><i class="bi-telephone"></i> +359 888 985 446</a>
+              <i class="bi-telephone"></i><a href="tel:+359888985446"> +359 (0) 888 985 446</a>
             </p>
             <p>
-              <a href="mailto:dr.dzheyn@gmail.com"><i class="bi-envelope"></i> dr.dzheyn@gmail.com</a>
+              <i class="bi-envelope"></i><a href="mailto:dr.dzheyn@gmail.com"> dr.dzheyn@gmail.com</a> |
+              <a href="mailto:docjein@abv.bg"> docjein@abv.bg</a>
             </p>
           </div>
 
@@ -100,33 +206,25 @@
         <div class="row">
 
           <!-- SHORT BIO -->
-          <div class="col-lg-6 col-md-6 col-12">
+          <div class="col-lg-8 col-md-6 col-12">
             <div class="padding-info shadow-lg">
               <h2 class="mb-lg-4 mb-3">СВЕТЛАНА ДЖЕЙН</h2>
+              <hr>
               <p>
-                Д-р Джейн е специалист в областта на стоматологията
-                и естетичната дентална медицина.
-                Професионалният дългогодишен
-                опит гарантира за едно висококачествено лечение, при което здравето,
-                комфортът и доверието на пациентите са приоритет.
+                Д-р Джейн е утвърден специалист с <strong> 30 години професинален опит</strong> в стоматологията и естетичната дентална медицина. 
+                Тя гарантира висококачествено лечение, поставяйки здравето, комфорта и доверието на пациентите на първо място. 
+              </p>
               <p>
-                Работата със
-                state-of-the-art технологии и материали дава възможност за
-                индивидуално и устойчиво решение без компромиси.
-                Д-р Джейн <strong>работи с НЗОК</strong> и приема пациенти от всички краища на света.
+                Със съвременни технологии и материали, д-р Джейн предлага индивидуални и устойчиви решения без компромиси.
+                <strong>Работи с Националната здравноосигурителна каса (НЗОК)</strong> и приема пациенти от цял свят.
               </p>
             </div>
           </div>
 
           <!-- PHOTO -->
-          <div class="flip-card d-flex mx-auto">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/photo1.jpg" alt="Avatar">
-              </div>
-              <div class="flip-card-back shadow-lg">
-                <p class="featured-text"><span class="featured-number">28</span> години<br> професионален опит</p>
-              </div>
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="photo-card">
+              <img src="images/zabolekar-varna-verified.png" alt="Профил на зъболекар Светлана Джейн, гр. Варна, специалист в стоматологията">
             </div>
           </div>
 
@@ -168,7 +266,7 @@
               <li class="service-name">
                 Неподвижно протезиране
                 <p class="service-info">
-                  корони и мостове (керамични, метални, пластмасови)
+                  коронки и мостове (керамични, метални, пластмасови)
                 </p>
               </li>
             </ul>
@@ -320,7 +418,7 @@
           <div class="map-text shadow-lg">
 
             <!-- LOCATION NAME -->
-            <p class="contacts-office-name"><strong>Стоматологичен кабинет Център</strong></p>
+            <p class="contacts-office-name"><strong>Стоматологичен кабинет (Център)</strong></p>
 
             <!-- ADDRESS -->
             <div class="contacts-address">
@@ -349,7 +447,7 @@
             <!-- EMAIL & TEL. -->
             <div class="contacts-contacts">
               <p class="contacts-mail-tel">
-                <i class="contacts-icon bi-telephone"></i><a href="tel:+359888985446"> +359 888 985 446</a>
+                <i class="contacts-icon bi-telephone"></i><a href="tel:+359888985446"> +359 (0) 888 985 446</a>
               </p>
               <p class="contacts-mail-tel">
                 <i class="contacts-icon bi-envelope"></i><a href="mailto:dr.dzheyn@gmail.com"> dr.dzheyn@gmail.com</a>
@@ -407,7 +505,7 @@
 
           <!-- LOCATION NAME 2 -->
           <div class="left-map-text shadow-lg">
-            <p class="contacts-office-name"><strong>Стоматологичен кабинет Галата</strong></p>
+            <p class="contacts-office-name"><strong>Стоматологичен кабинет (Галата)</strong></p>
 
             <!-- ADDRESS 2 -->
             <div class="contacts-address">
@@ -485,7 +583,7 @@
 
         <div class="footer-info">
           <br>
-          <p class="copyright-text">Copyright © 2022 Dr. Dzheyn
+          <p class="copyright-text">© Dzheyn 2025. All rights reserved
             <br>Design: <a href="https://github.com/Sashks" target="_parent">https://github.com/sashks</a>
           </p>
         </div>

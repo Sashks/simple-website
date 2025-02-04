@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-1emibold);
 }
 
 h1,
@@ -69,6 +69,7 @@ h2 {
 h1 {
   font-size: var(--h1-font-size);
   line-height: normal;
+  color: white;
 }
 
 h2 {
@@ -117,7 +118,7 @@ a:hover {
   SECTION ABOUT/INFO
 -----------------------------------------*/
 .section-about {
-  margin-top: -190px;
+  margin-top: -170px;
   padding-top: 3rem;
   margin-bottom: 120px;
 }
@@ -126,8 +127,8 @@ a:hover {
   display: none;
   margin-top: -176px;
   margin-left: -49px;
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 330px;
   position: absolute;
   border: 5px solid;
   border-color: var(--primary-color);
@@ -152,12 +153,11 @@ a:hover {
 }
 
 .padding-info {
+  width: 100%;
   border-radius: 20px;
   background-color: var(--section-bg-color);
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 30px 40px 30px 40px;
+
 }
 
 .padding-info strong {
@@ -166,59 +166,19 @@ a:hover {
 }
 
 /*---------------------------------------
-  PAGE FLIP PHOTO
+  PAGE PHOTO
 -----------------------------------------*/
-.flip-card {
-  background-color: transparent;
-  width: 350px;
-  height: 350px;
-  perspective: 1000px;
+.photo-card {
+  margin-top: 20px;
+  width: 330px; /* Set a fixed width */
+  height: 330px; /* Adjust height automatically */
+  overflow: hidden; /* Ensure the image stays within the borders */
 }
 
-.flip-card img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: transparent;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: var(--white-color);
-  width: 350px;
-  height: 350px;
-  transform: rotateY(180deg);
-  border-radius: 50%;
-}
-
-.flip-card-back p {
-  margin-top: 120px;
+.photo-card img {
+  width: 100%; /* Make the image fill the card */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra spacing below the image */
 }
 
 /*---------------------------------------
@@ -241,6 +201,43 @@ a:hover {
 /*---------------------------------------
   NAVIGATION
 -----------------------------------------*/
+
+/* Position the dropdown on the same level as the navbar */
+.language-dropdown {
+  position: absolute; /* Detach from the navbar flow */
+  top: 50%; /* Center vertically relative to the navbar */
+  transform: translateY(-50%); /* Center alignment */
+  right: 20px; /* Align to the far right */
+  z-index: 1050; /* Ensure it appears above the navbar */
+}
+
+.language-dropdown .dropdown-toggle {
+  font-size: 16px; /* Match the font size of the navbar links */
+  color: white; /* Ensure contrast on dark backgrounds */
+}
+
+.language-dropdown .dropdown-menu {
+  min-width: auto; /* Adjust width for a compact dropdown */
+  text-align: left; /* Align dropdown items */
+  border: 1px solid var(--border-color); /* Add a subtle border */
+}
+
+.language-dropdown .dropdown-item {
+  color: var(--dark-color); /* Match other navbar items */
+}
+
+.language-dropdown .dropdown-item:hover {
+  color: var(--primary-color); /* Highlight on hover */
+}
+
+@media (max-width: 767px) {
+  .language-dropdown {
+    top: 10px; /* Slightly higher for smaller screens */
+    right: 10px; /* Adjust spacing */
+    transform: none; /* Disable centering */
+  }
+}
+
 .main-navigation {
   background: rgba(0, 0, 0, 0);
   position: fixed;
@@ -248,7 +245,7 @@ a:hover {
   padding: 0px;
   z-index: 222;
   transition: all .3s;
-  animation: addressAppear 2.5s;
+  animation: addressAppear 1s;
 }
 
 .main-navigation-active {
@@ -292,6 +289,10 @@ a:hover {
   margin-left: 0px;
   text-align: center;
   border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.blog a:hover{
+  color: var(--white-color);
 }
 
 .navbar-light .navbar-nav .nav-item:last-child {
@@ -343,13 +344,13 @@ a:hover {
   }
 }
 
-.main-banner h5 {
+.main-banner h1 {
   font-size: 28px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2.5px;
-  animation: nameAppear 2.3s;
+  animation: nameAppear 1s;
 }
 
 @keyframes nameAppear {
@@ -364,19 +365,23 @@ a:hover {
   }
 }
 
-.main-banner h2 {
-  color: #ffffff;
+.main-banner h1 {
+  color: white;
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 25px;
-  animation: nameAppear 2.3s;
+  animation: nameAppear 1s;
 }
 
-.main-banner h2 em {
+.main-banner h2 {
+  color: white;
+}
+
+.main-banner h1 em {
   font-style: normal;
-  color: var(--primary-color);
+  color: #40997a;
 }
 
 .main-banner p {
@@ -386,11 +391,11 @@ a:hover {
 }
 
 .main-address {
-  animation: addressAppear 2.5s;
+  animation: addressAppear 1s;
 }
 
 .main-contacts {
-  animation: addressAppear 2.5s;
+  animation: addressAppear 1s;
 }
 
 @keyframes addressAppear {
@@ -460,7 +465,7 @@ a:hover {
 .service-name:hover .service-info {
   color: var(--white-color);
   transition: all .5s;
-  animation: serviceInfo 2s;
+  animation: serviceInfo 1s;
 }
 
 @keyframes serviceInfo {
@@ -608,7 +613,7 @@ a:hover {
 }
 
 .map {
-  width: 630px;
+  width: 60%;
 }
 
 .map-frame {
@@ -751,6 +756,14 @@ a:hover {
   width: 80%;
 }
 
+.footer-info a {
+  color: #3e91c5;
+}
+
+.footer-info a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
 .copyright-text {
   font-size: var(--menu-font-size);
 }
@@ -759,7 +772,6 @@ a:hover {
   RESPONSIVE STYLES
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
-  body {}
 
   h1 {
     font-size: 38px;
@@ -844,7 +856,12 @@ a:hover {
     margin: 20px auto;
   }
 
+  .section-contacts {
+    margin-left: 20px;
+  }
+
   .map {
+    padding-right: 40px;
     width: 450px;
   }
 
