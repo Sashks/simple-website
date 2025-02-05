@@ -1,1 +1,1 @@
-Hosted on [Netlify](https://doctorsvetlana.netlify.app/)
+[/dʒeɪn/](https://dzheyn.eu/)
